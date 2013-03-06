@@ -39,7 +39,7 @@
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    <a runat="server" href="~/">Ihr Logo hier einfügen</a>
+                    Koordiantor
                 </p>
             </div>
             <div class="float-right">
