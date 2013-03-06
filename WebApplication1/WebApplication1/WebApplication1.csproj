@@ -228,6 +228,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Content\themes\base\images\unilogo.png" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>

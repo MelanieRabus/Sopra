@@ -13,6 +13,12 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 417px;
+            height: 81px;
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
@@ -39,43 +45,29 @@
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    Koordiantor
+                    Modul Management System
                 </p>
             </div>
             <div class="float-right">
-                <section id="login">
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul>
-                                <li><a id="registerLink" runat="server" href="~/Account/Register.aspx">Register</a></li>
-                                <li><a id="loginLink" runat="server" href="~/Account/Login.aspx">Anmelden</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <p>
-                                Hello, <a runat="server" class="username" href="~/Account/Manage.aspx" title="Manage your account">
-                                    <asp:LoginName runat="server" CssClass="username" /></a>!
-                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Abmelden" LogoutPageUrl="~/" />
-                            </p>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </section>
-                <nav>
-                    <ul id="menu">
-                        <li><a runat="server" href="~/">Startseite</a></li>
-                        <li><a runat="server" href="~/About.aspx">Info</a></li>
-                        <li><a runat="server" href="~/Contact.aspx">Kontakt</a></li>
-                    </ul>
-                </nav>
-            </div>
+               
+                <img alt="Uni Ulm" class="auto-style1" src="Content/themes/base/images/unilogo.png" /></div>
         </div>
+        <div class="navi-leisteOben">
+
+
+            h</div>
     </header>
-    <div id="body">
+        <table style="width:10%;background-color:#7D9AAA;height: 100%;left: 20px; margin: 0;  padding: 0;">
+            <tr>
+                <td>&nbsp;</td>
+                
+            </tr>
+           </table>
         <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-        <section class="content-wrapper main-content clear-fix">
-            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-        </section>
-    </div>
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+        
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
