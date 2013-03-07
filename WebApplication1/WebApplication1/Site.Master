@@ -13,13 +13,9 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
-    <style type="text/css">
-        .auto-style1 {
-            width: 417px;
-            height: 81px;
-        }
-    </style>
+
 </head>
+
 <body>
     <form runat="server">
     <asp:ScriptManager runat="server">
@@ -41,40 +37,39 @@
 
         </Scripts>
     </asp:ScriptManager>
-    <header>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p class="site-title">
-                    Modul Management System
+    <div class="toppanel" >
+        <header>       
+                <p class="bannertext">
+                  Modul Management System
                 </p>
-            </div>
-            <div class="float-right">
-               
-                <img alt="Uni Ulm" class="auto-style1" src="Content/themes/base/images/unilogo.png" /></div>
-        </div>
-        <div class="navi-leisteOben">
+        <img alt="Uni Ulm" class="Logoresized" src="Content/themes/base/images/unilogo.png"/ >
+              <img class="navileisteOben" src="Images/uni-bg.png" /> 
+             </header>
+                </div>
 
 
-            h</div>
-    </header>
-        <table style="width:10%;background-color:#7D9AAA;height: 100%;left: 20px; margin: 0;  padding: 0;">
-            <tr>
-                <td>&nbsp;</td>
-                
-            </tr>
-           </table>
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-            <section class="content-wrapper main-content clear-fix">
-                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-            </section>
-        
-    <footer>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p>&copy; <%: DateTime.Now.Year %> - Meine ASP.NET-Anwendung</p>
-            </div>
-        </div>
-    </footer>
+<div class="middlepanel">
+    <div id="content">
+        Inhaltsfenster
+    </div>
+
+
+</div>
+
+
+<div class="leftpanel">
+       
+            <img class="menueleft" src="Images/navilinks.png"> 
+    <ul id="Navigation">
+  <li>Menüpunkt</li>
+  <li>Menüpunkt</li>
+  <li>Menüpunkt</li>
+  <li>Menüpunkt</li>
+  <li>Menüpunkt</li>
+</ul>
+   
+</div>  
+
     </form>
 </body>
 </html>
