@@ -13,7 +13,10 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <style>
 
+
+    </style>
 </head>
 
 <body>
@@ -43,14 +46,25 @@
                   Modul Management System
                 </p>
         <img alt="Uni Ulm" class="Logoresized" src="Content/themes/base/images/unilogo.png"/ >
-              <img class="navileisteOben" src="Images/uni-bg.png" /> 
-             </header>
+              <img class="navileisteOben" src="Images/uni-bg.png" />
+              <ul class="NavtopUl">
+                   <li class="Navitop">Test</li>
+                   <li class="Navitop">Test</li>
+                   <li class="Navitop">Test</li>
+                  
+              </ul>
+            </header>  
+        
                 </div>
+     
 
 
 <div class="middlepanel">
-    <div id="content">
-        Inhaltsfenster
+   
+    <div class="content">
+                    <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+
+    
     </div>
 
 
@@ -60,7 +74,7 @@
 <div class="leftpanel">
        
             <img class="menueleft" src="Images/navilinks.png"> 
-    <ul id="Navigation">
+    <ul class="Navigation">
   <li>Menüpunkt</li>
   <li>Menüpunkt</li>
   <li>Menüpunkt</li>

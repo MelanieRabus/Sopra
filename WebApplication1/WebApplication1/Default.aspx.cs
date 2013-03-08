@@ -11,7 +11,9 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            this.Panel1.Style.Add("position", "absolute");
+            this.Panel1.Style.Add("top", "30%");
+            this.Panel1.Style.Add("left", "30%");
         }
     }
 }
